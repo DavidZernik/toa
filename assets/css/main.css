@@ -289,6 +289,35 @@ section, summary, time, mark, audio, video {
 			font-size: 30px;
 		}
 
+		.spotlight.locations p {
+			margin: 10px 0 35px;
+		}
+
+		.states  {
+			display: block!important;
+		}
+
+
+		.state-icons {
+			max-width: 140px;
+			margin: 0 auto;
+		}
+
+		.state-icons--1 {
+			max-width: 120px;
+			margin-right:0;
+		}
+
+		.state-icons--2 {
+			max-width: 120px;
+			margin-left:0;
+		}
+
+		.state-icons--3 {
+			max-width: 120px;
+			margin-right:0;
+		}
+
 		/* Row */
 
 		.row {
@@ -1274,6 +1303,10 @@ section, summary, time, mark, audio, video {
 				font-size: 20px!important;
 				line-height: 25px!important;
 				padding: 45px 0 0 0!important;
+			}
+
+			.state-icons {
+				margin: 20px auto 0!important;
 			}
 
 			.number-nine {
@@ -2809,7 +2842,7 @@ section, summary, time, mark, audio, video {
 			}
 
 			.spotlight.faq .image {
-				width: 60%;
+				width: 100%;
 			}
 
 			.spotlight .content {
@@ -2834,6 +2867,17 @@ section, summary, time, mark, audio, video {
 
 			.spotlight .content {
 				padding: 4em 3em 2em 3em ;
+				max-width: none;
+				text-align: center;
+				width: 100%;
+			}
+
+			.spotlight.about-us .content {
+				padding: 4em 3em 3.4em 3em ;
+			}
+
+			.spotlight .content.content-states {
+				padding: 0 3em 2em 3em ;
 				max-width: none;
 				text-align: center;
 				width: 100%;
