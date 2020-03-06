@@ -284,13 +284,17 @@ section, summary, time, mark, audio, video {
 			text-align: right;
 		}
 
+		/* my styles only big screen */
+		@media screen and (min-width: 980px) {
+		}
+
 		/* My styles desktop*/
 		.potential {
 			font-size: 30px;
 		}
 
 		.spotlight.locations p {
-			margin: 10px 0 35px;
+			margin: 10px 0 1%;
 		}
 
 		.states  {
@@ -306,16 +310,19 @@ section, summary, time, mark, audio, video {
 		.state-icons--1 {
 			max-width: 120px;
 			margin-right:0;
+			padding-bottom: 0px;
 		}
 
 		.state-icons--2 {
 			max-width: 120px;
 			margin-left:0;
+			padding-bottom: 10px;
 		}
 
 		.state-icons--3 {
 			max-width: 120px;
 			margin-right:0;
+			padding-bottom: 10px;
 		}
 
 		/* Row */
@@ -1296,13 +1303,28 @@ section, summary, time, mark, audio, video {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 980px) {
+
 
 			/* My styles mobile*/
 			.potential {
 				font-size: 20px!important;
 				line-height: 25px!important;
 				padding: 45px 0 0 0!important;
+			}
+
+			.state-icons {
+				padding-bottom: 5px!important;
+			}
+
+			.content-states2 {
+				padding-left: 0!important;
+				padding-right: 0!important;
+				width: 100%!important;
+			}
+
+			.remove-padding {
+				padding-bottom: 0!important;
 			}
 
 			.state-icons {
@@ -2889,6 +2911,23 @@ section, summary, time, mark, audio, video {
 
 			.spotlight .content {
 				padding: 3em 2em 1em 2em ;
+			}
+
+			.spotlight.locations p {
+				margin: 10px 0 0px!important;
+				padding-bottom: 20px!important;
+			}
+
+			.content-states {
+				padding: 0!important;
+			}
+
+			.content-states2 {
+				margin: 0 auto!important;
+			}
+
+			.state-icons  {
+				padding: 10px!important;
 			}
 
 		}
