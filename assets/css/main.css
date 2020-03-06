@@ -284,6 +284,11 @@ section, summary, time, mark, audio, video {
 			text-align: right;
 		}
 
+		/* My styles desktop*/
+		.potential {
+			font-size: 30px;
+		}
+
 		/* Row */
 
 		.row {
@@ -1264,6 +1269,17 @@ section, summary, time, mark, audio, video {
 
 		@media screen and (max-width: 736px) {
 
+			/* My styles mobile*/
+			.potential {
+				font-size: 20px!important;
+				line-height: 25px!important;
+				padding: 45px 0 0 0!important;
+			}
+
+			.number-nine {
+				display: block!important;
+			}
+
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1859,7 +1875,7 @@ section, summary, time, mark, audio, video {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #42bea4;
 		}
 
 		select {
@@ -1956,7 +1972,7 @@ section, summary, time, mark, audio, video {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #42bea4;
 		}
 
 		input[type="checkbox"] + label:before {
@@ -2087,7 +2103,7 @@ section, summary, time, mark, audio, video {
 		}
 
 		.icon.style1 {
-			color: #00ffcc;
+			color: #42bea4;
 		}
 
 		.icon.style2 {
@@ -2155,7 +2171,7 @@ section, summary, time, mark, audio, video {
 		}
 
 		ul {
-			list-style: disc;
+			/* list-style: disc; */
 			margin: 0 0 2em 0;
 			padding-left: 1em;
 		}
@@ -2617,7 +2633,7 @@ section, summary, time, mark, audio, video {
 
 		.features li:before {
 			display: block;
-			color: #00ffcc;
+			color: #42bea4;
 			position: absolute;
 			left: 1.75em;
 			top: 2.75em;
@@ -2865,7 +2881,7 @@ section, summary, time, mark, audio, video {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: #42bea4;
 			color: #c8ece9;
 		}
 
@@ -2919,7 +2935,7 @@ section, summary, time, mark, audio, video {
 
 		.wrapper.style1 select option {
 			color: #ffffff;
-			background: #21b2a6;
+			background: #42bea4;
 		}
 
 		.wrapper.style1 input[type="checkbox"] + label,
@@ -2935,7 +2951,7 @@ section, summary, time, mark, audio, video {
 		.wrapper.style1 input[type="checkbox"]:checked + label:before,
 		.wrapper.style1 input[type="radio"]:checked + label:before {
 			background: #ffffff;
-			color: #21b2a6;
+			color: #42bea4;
 		}
 
 		.wrapper.style1 ::-webkit-input-placeholder {
@@ -3399,7 +3415,7 @@ section, summary, time, mark, audio, video {
 			-ms-transition: -ms-transform 0.5s ease;
 			transition: transform 0.5s ease;
 			-webkit-overflow-scrolling: touch;
-			background: #21b2a6;
+			background: #42bea4;
 			color: #ffffff;
 			height: 100%;
 			max-width: 80%;
