@@ -2,9 +2,13 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
 /*
+
 Spectral by HTML5 UP
+
 html5up.net | @ajlkn
+
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
 */
 
 html, body, div, span, applet, object,
@@ -4144,3 +4148,144 @@ section, summary, time, mark, audio, video {
 		body.is-mobile.landing #footer {
 			background-color: #1d242a;
 		}
+
+header#header.alt #navdesktop {
+    width: 100%;
+}
+nav#nav {
+    display: none;
+}
+header#header.alt #navdesktop {
+    width: 100%;
+    text-align: center;
+}
+header#header #navdesktop li{
+padding: 0px 15px !important;
+    
+}
+header#header li a{
+padding: 0px 15px !important;
+    
+}
+nav#navdesktop li {
+    font-weight: bold;
+}
+input#demo-phone {
+    width: 100%;
+    background: #464E55;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width:736px){
+	nav#nav {
+		display: block !important;
+	}
+	#navdesktop {
+		display: none !important;
+	}
+}
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all .4s ease-in;
+    vertical-align: middle;
+}
+#quote-carousel .carousel-indicators .active {
+    width: 128px;
+    height: 128px;
+    opacity: 1;
+    transition: all .2s;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+blockquote p{color:#fff;}
+.accordion--faq {
+  max-width: 550px;
+  margin: 1em auto;
+}
+.accordion--faq .accordion__question:last-child {
+  border-bottom: 1px solid white;
+}
+.accordion--faq .accordion__header {
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 0.031em;
+  line-height: 2.3;
+  padding: 0.5em 1em;
+  width: 100%;
+}
+section.accordion__question {
+    border-bottom: 1px solid #ccc;
+}
+.accordion--faq .accordion__header:hover span, .accordion--faq .accordion__header:focus span {
+  color: white;
+}
+.accordion--faq .accordion__header.is-active span {
+  color: white;
+}
+.accordion--faq .accordion__header.is-active span:before {
+ /* content: "\e0c4";*/
+}
+.accordion--faq .accordion__header span {
+  display: inline-block;
+  color: #4e606d;
+  line-height: 2.3;
+  float: right;
+}
+.accordion--faq .accordion__heading {
+  display: inline-block;
+  margin: 0;
+}
+.accordion--faq .accordion__content {
+  display: none;
+  padding: 1em;
+}
+.accordion h5, .accordion p {
+    color: #00f0ff;
+    font-style: italic;
+}
+@media screen and (min-width:737px){
+	header h1 {
+		display: none !important;
+	}
+	nav#navdesktop {
+		position: relative;
+		width: 100%;
+		text-align: center;
+	}
+}
