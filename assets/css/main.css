@@ -4175,6 +4175,11 @@ section, summary, time, mark, audio, video {
 		nav#navdesktop li {
 			font-weight: bold;
 		}
+
+		nav#navdesktop li a:hover {
+			color: #ed4933;
+		}
+
 		input#demo-phone {
 			width: 100%;
 			background: #464E55;
