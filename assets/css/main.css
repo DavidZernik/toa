@@ -2817,7 +2817,7 @@ section, summary, time, mark, audio, video {
 			flex-direction: row-reverse;
 		}
 
-		.spotlight:nth-child(1) {
+		/* .spotlight:nth-child(1) {
 			background-color: rgba(0, 0, 0, 0.075);
 		}
 
@@ -2827,7 +2827,7 @@ section, summary, time, mark, audio, video {
 
 		.spotlight:nth-child(3) {
 			background-color: rgba(0, 0, 0, 0.225);
-		}
+		} */
 
 		.spotlight:nth-child(4) {
 			background-color: rgba(0, 0, 0, 0.3);
@@ -4177,7 +4177,7 @@ section, summary, time, mark, audio, video {
 		}
 
 		nav#navdesktop li a:hover {
-			color: #ed4933;
+			color: #5d89b0;
 		}
 
 		input#demo-phone {
