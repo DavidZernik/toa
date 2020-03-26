@@ -290,6 +290,10 @@ section, summary, time, mark, audio, video {
 
 		/* my styles only big screen */
 		@media screen and (min-width: 980px) {
+			.spotlight.locations {
+				display: flex;
+				flex-direction: column-reverse;
+			}
 		}
 
 		/* My styles desktop*/
