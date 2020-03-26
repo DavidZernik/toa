@@ -2646,6 +2646,10 @@ section, summary, time, mark, audio, video {
 			width: 100%;
 		}
 
+		.carousel.slide a {
+			border: none!important;
+		}
+
 		.features li {
 			padding: 4em 4em 2em 6em ;
 			display: block;
