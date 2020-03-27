@@ -289,12 +289,19 @@ section, summary, time, mark, audio, video {
 		}
 
 		/* my styles only big screen */
-		@media screen and (min-width: 980px) {
+		@media screen and (max-width: 980px) {
 			.spotlight.locations {
 				display: flex;
 				flex-direction: column-reverse;
 			}
+
+			.locations-item-2 {
+				display: flex!important;
+				flex-direction: column-reverse!important;
+			}
 		}
+
+
 
 		/* My styles desktop*/
 		.potential {
