@@ -289,8 +289,19 @@ section, summary, time, mark, audio, video {
 		}
 
 		/* my styles only big screen */
-		@media screen and (min-width: 980px) {
+		@media screen and (max-width: 980px) {
+			.spotlight.locations {
+				display: flex;
+				flex-direction: column-reverse;
+			}
+
+			.locations-item-2 {
+				display: flex!important;
+				flex-direction: column-reverse!important;
+			}
 		}
+
+
 
 		/* My styles desktop*/
 		.potential {
@@ -2642,6 +2653,10 @@ section, summary, time, mark, audio, video {
 			width: 100%;
 		}
 
+		.carousel.slide a {
+			border: none!important;
+		}
+
 		.features li {
 			padding: 4em 4em 2em 6em ;
 			display: block;
@@ -2817,7 +2832,7 @@ section, summary, time, mark, audio, video {
 			flex-direction: row-reverse;
 		}
 
-		.spotlight:nth-child(1) {
+		/* .spotlight:nth-child(1) {
 			background-color: rgba(0, 0, 0, 0.075);
 		}
 
@@ -2827,7 +2842,7 @@ section, summary, time, mark, audio, video {
 
 		.spotlight:nth-child(3) {
 			background-color: rgba(0, 0, 0, 0.225);
-		}
+		} */
 
 		.spotlight:nth-child(4) {
 			background-color: rgba(0, 0, 0, 0.3);
@@ -2867,9 +2882,9 @@ section, summary, time, mark, audio, video {
 				width: 65%;
 			}
 
-			.spotlight.faq .image {
+			/* .spotlight.faq .image {
 				width: 100%;
-			}
+			} */
 
 			.spotlight .content {
 				width: 55%;
@@ -2885,6 +2900,11 @@ section, summary, time, mark, audio, video {
 
 			.spotlight br {
 				display: none;
+			}
+
+
+			.spotlight.faq {
+				flex-direction: column;
 			}
 
 			.spotlight .image {
@@ -4149,143 +4169,165 @@ section, summary, time, mark, audio, video {
 			background-color: #1d242a;
 		}
 
-header#header.alt #navdesktop {
-    width: 100%;
-}
-nav#nav {
-    display: none;
-}
-header#header.alt #navdesktop {
-    width: 100%;
-    text-align: center;
-}
-header#header #navdesktop li{
-padding: 0px 15px !important;
-    
-}
-header#header li a{
-padding: 0px 15px !important;
-    
-}
-nav#navdesktop li {
-    font-weight: bold;
-}
-input#demo-phone {
-    width: 100%;
-    background: #464E55;
-    border: none;
-    border-radius: 2px;
-    padding: 10px 20px;
-}
+		header#header.alt #navdesktop {
+			width: 100%;
+		}
+		nav#nav {
+			display: none;
+		}
+		header#header.alt #navdesktop {
+			width: 100%;
+			text-align: center;
+		}
+		header#header #navdesktop li{
+			padding: 0px 1.5% !important;
 
-@media screen and (max-width:736px){
-	nav#nav {
-		display: block !important;
-	}
-	#navdesktop {
-		display: none !important;
-	}
-}
-#quote-carousel {
-    padding: 0 10px 30px 10px;
-    margin-top: 60px;
-}
-#quote-carousel .carousel-control {
-    background: none;
-    color: #CACACA;
-    font-size: 2.3em;
-    text-shadow: none;
-    margin-top: 30px;
-}
-#quote-carousel .carousel-indicators {
-    position: relative;
-    right: 50%;
-    top: auto;
-    bottom: 0px;
-    margin-top: 20px;
-    margin-right: -19px;
-}
-#quote-carousel .carousel-indicators li {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    opacity: 0.4;
-    overflow: hidden;
-    transition: all .4s ease-in;
-    vertical-align: middle;
-}
-#quote-carousel .carousel-indicators .active {
-    width: 128px;
-    height: 128px;
-    opacity: 1;
-    transition: all .2s;
-}
-.item blockquote {
-    border-left: none;
-    margin: 0;
-}
-.item blockquote p:before {
-    content: "\f10d";
-    font-family: 'Fontawesome';
-    float: left;
-    margin-right: 10px;
-}
-blockquote p{color:#fff;}
-.accordion--faq {
-  max-width: 550px;
-  margin: 1em auto;
-}
-.accordion--faq .accordion__question:last-child {
-  border-bottom: 1px solid white;
-}
-.accordion--faq .accordion__header {
-  cursor: pointer;
-  display: inline-block;
-  letter-spacing: 0.031em;
-  line-height: 2.3;
-  padding: 0.5em 1em;
-  width: 100%;
-}
-section.accordion__question {
-    border-bottom: 1px solid #ccc;
-}
-.accordion--faq .accordion__header:hover span, .accordion--faq .accordion__header:focus span {
-  color: white;
-}
-.accordion--faq .accordion__header.is-active span {
-  color: white;
-}
-.accordion--faq .accordion__header.is-active span:before {
- /* content: "\e0c4";*/
-}
-.accordion--faq .accordion__header span {
-  display: inline-block;
-  color: #4e606d;
-  line-height: 2.3;
-  float: right;
-}
-.accordion--faq .accordion__heading {
-  display: inline-block;
-  margin: 0;
-}
-.accordion--faq .accordion__content {
-  display: none;
-  padding: 1em;
-}
-.accordion h5, .accordion p {
-    color: #00f0ff;
-    font-style: italic;
-}
-@media screen and (min-width:737px){
-	header h1 {
-		display: none !important;
-	}
-	nav#navdesktop {
-		position: relative;
-		width: 100%;
-		text-align: center;
-	}
-}
+		}
+		header#header li a{
+			padding: 0px 1.5% !important;
+
+		}
+		nav#navdesktop li {
+			font-weight: bold;
+		}
+
+		nav#navdesktop li a:hover {
+			color: #5d89b0;
+		}
+
+		input#demo-phone {
+			width: 100%;
+			background: #464E55;
+			border: none;
+			border-radius: 2px;
+			padding: 10px 20px;
+		}
+
+		@media screen and (max-width:900px){
+			header#header #navdesktop li{
+				font-size:13px!important;
+
+			}
+		}
+
+		@media screen and (max-width:736px){
+			nav#nav {
+				display: block !important;
+			}
+			#navdesktop {
+				display: none !important;
+			}
+		}
+		#quote-carousel {
+			padding: 0 10px 30px 10px;
+			margin-top: 60px;
+		}
+		#quote-carousel .carousel-control {
+			background: none;
+			color: #CACACA;
+			font-size: 2.3em;
+			text-shadow: none;
+			margin-top: 30px;
+		}
+		#quote-carousel .carousel-indicators {
+			position: relative;
+			right: 50%;
+			top: auto;
+			bottom: 0px;
+			margin-top: 20px;
+			margin-right: -19px;
+		}
+		#quote-carousel .carousel-indicators li {
+			width: 50px;
+			height: 50px;
+			cursor: pointer;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			border-radius: 50%;
+			opacity: 0.4;
+			overflow: hidden;
+			transition: all .4s ease-in;
+			vertical-align: middle;
+		}
+		#quote-carousel .carousel-indicators .active {
+			width: 128px;
+			height: 128px;
+			opacity: 1;
+			transition: all .2s;
+		}
+		.item blockquote {
+			border-left: none;
+			margin: 0;
+		}
+		.item blockquote p:before {
+			content: "\f10d";
+			font-family: 'Fontawesome';
+			float: left;
+			margin-right: 10px;
+		}
+		blockquote p{color:#fff;}
+		.accordion--faq {
+			max-width: 550px;
+			margin: 1em auto;
+		}
+		.accordion--faq .accordion__question:last-child {
+			border-bottom: 1px solid white;
+		}
+		.accordion--faq .accordion__header {
+			cursor: pointer;
+			display: inline-block;
+			letter-spacing: 0.031em;
+			line-height: 2.3;
+			padding: 0.5em 1em;
+			width: 100%;
+		}
+		section.accordion__question {
+			border-bottom: 1px solid #ccc;
+		}
+		.accordion--faq .accordion__header:hover span, .accordion--faq .accordion__header:focus span {
+			color: white;
+		}
+		.accordion--faq .accordion__header.is-active span {
+			color: white;
+		}
+		.accordion--faq .accordion__header.is-active span:before {
+			/* content: "\e0c4";*/
+		}
+		.accordion--faq .accordion__header span {
+			display: inline-block;
+			color: #4e606d;
+			line-height: 2.3;
+			float: right;
+		}
+		.accordion--faq .accordion__heading {
+			display: inline-block;
+			margin: 0;
+	    font-size: 15px;
+		}
+		.accordion--faq .accordion__content {
+			display: none;
+			padding: 1em;
+	    padding-top: 0;
+		}
+
+		.accordion__content p {
+			color:white!important;
+			font-style: normal!important;
+			font-size: 13px;
+			line-height: 19px;
+		}
+
+		.accordion h5, .accordion p {
+			color: #00f0ff;
+			font-style: italic;
+		}
+		@media screen and (min-width:737px){
+			header h1 {
+				display: none !important;
+			}
+			nav#navdesktop {
+				position: relative;
+				width: 100%;
+				text-align: center;
+			}
+		}

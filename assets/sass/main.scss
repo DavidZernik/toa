@@ -981,7 +981,9 @@ button,
 
 /* Features */
 
-
+.menuToggle {
+	margin-right: 20px!important;
+}
 
 .features {
 	@include vendor('display', 'flex');
@@ -1510,7 +1512,7 @@ body.is-menu-visible {
 		line-height: inherit;
 		position: absolute;
 		right: 0;
-		top: 0;
+		top: 0
 
 		> ul {
 			list-style: none;
