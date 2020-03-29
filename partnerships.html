@@ -40,7 +40,7 @@
 
 					<header id="header">
 
-						<h1><a href="index.html">Tax Opportunities America</a></h1>
+						<h1 class="partner-head"><a href="index.html">HOME</a></h1>
 
 						<nav id="nav">
 
@@ -100,52 +100,36 @@
 
 									<h4 style="text-align: center;margin: 50px auto 20px;font-size: 27px;">Reach us directly</h4>
 
-									<form method="post" action="#">
-
+									<!-- <form method="post" action="#">
 										<div class="row gtr-uniform">
-
 											<div class="col-6 col-12-xsmall">
-
 												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-
 											</div>
-
-
-
 											<div class="col-6 col-12-xsmall">
-
 												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-
 											</div>
-
 											<div class="col-6 col-12-xsmall">
-
-												
-
 												<input type="tel" name="demo-phone" id="demo-phone" value="" placeholder="Phone number" style="background:#F5F5F5;" />
-
 											</div>
-
 											<div class="col-12">
-
 												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-
 											</div>
-
 											<div class="col-12">
-
 												<ul class="actions">
-
 													<li><input type="submit" value="Send Message" class="primary" /></li>
-
 													<li><input type="reset" value="Reset" /></li>
-
 												</ul>
-
 											</div>
-
 										</div>
+									</form> -->
 
+									<form action="mail.php" method="POST">
+										<span>Name</span> <input type="text" name="name">
+										<span>Phone</span> <input type="text" name="phone">
+										<span>Email</span> <input type="text" name="email">
+										<span>Message</span>
+										<textarea name="message" rows="6" cols="25"></textarea><br />
+										<input type="submit" value="Send"><input type="reset" value="Clear">
 									</form>
 
 								</section>
@@ -160,29 +144,33 @@
 
 				<!-- Footer -->
 
-					<footer id="footer">
+				<footer id="footer">
 
-						<ul class="icons">
+					<ul style="margin-bottom:7px;" class="icons">
 
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="" style="border-bottom:none;font-size:20px;" class=""><span class="">(543) 235-2467</span></a></li>
 
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
 
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+					<ul  style="margin-bottom:7px;" class="copyright">
 
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li>
 
-						</ul>
+							<img style="width: 210px; max-width: 95%; display: flex;"src="images/toa-logo.png" alt="" />
 
-						<ul class="copyright">
+						</li>
 
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
 
-						</ul>
+					<ul  style="margin-bottom:7px;" class="copyright">
 
-					</footer>
+						<li>&copy;2020</li><li>Tax Opportunities America</li>
+
+					</ul>
+
+				</footer>
 
 
 
@@ -211,4 +199,3 @@
 	</body>
 
 </html>
-

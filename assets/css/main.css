@@ -1902,6 +1902,7 @@ section, summary, time, mark, audio, video {
 
 		form {
 			margin: 0 0 2em 0;
+	    padding: 0 0 40px;
 		}
 
 		label {
@@ -4236,6 +4237,7 @@ section, summary, time, mark, audio, video {
 			bottom: 0px;
 			margin-top: 20px;
 			margin-right: -19px;
+			height: 150px;
 		}
 		#quote-carousel .carousel-indicators li {
 			width: 50px;
@@ -4324,6 +4326,10 @@ section, summary, time, mark, audio, video {
 		@media screen and (min-width:737px){
 			header h1 {
 				display: none !important;
+			}
+
+			header h1.partner-head {
+				display: block !important;
 			}
 			nav#navdesktop {
 				position: relative;
