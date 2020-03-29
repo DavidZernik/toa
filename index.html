@@ -711,7 +711,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 	<h4 style="text-align: center;margin: 50px auto 20px;font-size: 27px;">Contact us directly</h4>
 
-	<form method="post" action="mail.php">
+	<!-- <form method="post" action="mail.php">
 		<div class="row gtr-uniform">
 			<div class="col-6 col-12-xsmall">
 				<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
@@ -722,7 +722,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 			</div>
 
 			<div class="col-6 col-12-xsmall">
-				<!-- <label style="margin:0 20px 0 0;" for="demo-phone">Phone number:</label> -->
 				<input type="phone" name="demo-phone" id="demo-phone" value="" placeholder="Phone number" />
 			</div>
 
@@ -737,7 +736,15 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 				</ul>
 			</div>
 		</div>
-	</form>
+	</form> -->
+
+<!-- new form -->
+	<form action="mail.php" method="POST">
+<p>Name</p> <input type="text" name="name">
+<p>Email</p> <input type="text" name="email">
+<p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+<input type="submit" value="Send"><input type="reset" value="Clear">
+</form>
 
 </section>
 </section>
