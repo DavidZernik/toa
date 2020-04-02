@@ -2770,7 +2770,7 @@ section, summary, time, mark, audio, video {
 		p.question {
 			font-weight: bold!important;
 			font-style: italic!important;
-			color:#00f0ff!important;
+			color:#5d89b0!important;
 			font-size: 18px!important;
 		}
 
@@ -4320,7 +4320,7 @@ section, summary, time, mark, audio, video {
 		}
 
 		.accordion h5, .accordion p {
-			color: #00f0ff;
+			color: #5d89b0;
 			font-style: italic;
 		}
 		@media screen and (min-width:737px){
