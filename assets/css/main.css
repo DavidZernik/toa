@@ -332,7 +332,9 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 .top-nav-collapse .navbar-brand {
   top: 0px;
+  display: block!important;
 }
+
 
 .top-nav-collapse .navbar-brand img {
   width: 65%;
