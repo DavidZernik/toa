@@ -1,83 +1,77 @@
-/*
-Spectral by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
+  
+  "use strict";  
 
-	var	$window = $(window),
-	$body = $('body'),
-	$wrapper = $('#page-wrapper'),
-	$banner = $('#banner'),
-	$header = $('#header');
+  $(window).on('load', function() {
 
-	// Breakpoints.
-	breakpoints({
-		xlarge:   [ '1281px',  '1680px' ],
-		large:    [ '981px',   '1280px' ],
-		medium:   [ '737px',   '980px'  ],
-		small:    [ '481px',   '736px'  ],
-		xsmall:   [ null,      '480px'  ]
-	});
+     /* Page Loader active
+    ========================================================*/
+    $('#preloader').fadeOut();
 
-	// Play initial animations on page load.
-	$window.on('load', function() {
-		window.setTimeout(function() {
-			$body.removeClass('is-preload');
-		}, 100);
-	});
+  // Sticky Nav
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() > 200) {
+            $('.scrolling-navbar').addClass('top-nav-collapse');
+        } else {
+            $('.scrolling-navbar').removeClass('top-nav-collapse');
+        }
+    });
 
-	// Mobile?
-	if (browser.mobile)
-	$body.addClass('is-mobile');
-	else {
+    /* slicknav mobile menu active  */
+    $('.mobile-menu').slicknav({
+      prependTo: '.navbar-header',
+      parentTag: 'liner',
+      allowParentLinks: true,
+      duplicate: true,
+      label: '',
+      closedSymbol: '<i class="icon-arrow-right"></i>',
+      openedSymbol: '<i class="icon-arrow-down"></i>',
+    });
 
-		breakpoints.on('>medium', function() {
-			$body.removeClass('is-mobile');
-		});
+    /* ==========================================================================
+    countdown timer
+    ========================================================================== */
+     jQuery('#clock').countdown('2018/10/19',function(event){
+      var $this=jQuery(this).html(event.strftime(''
+      +'<div class="time-entry days"><span>%-D</span> Days</div> '
+      +'<div class="time-entry hours"><span>%H</span> Hours</div> '
+      +'<div class="time-entry minutes"><span>%M</span> Minutes</div> '
+      +'<div class="time-entry seconds"><span>%S</span> Seconds</div> '));
+    });
 
-		breakpoints.on('<=medium', function() {
-			$body.addClass('is-mobile');
-		});
+    /* WOW Scroll Spy
+    ========================================================*/
+     var wow = new WOW({
+      //disabled for mobile
+        mobile: false
+    });
+    wow.init();
 
-	}
+    // one page navigation 
+    $('.onepage-nev').onePageNav({
+            currentClass: 'active'
+    }); 
 
-	// Scrolly.
-	$('.scrolly')
-	.scrolly({
-		speed: 1500,
-		offset: $header.outerHeight()
-	});
+    /* Back Top Link active
+    ========================================================*/
+      var offset = 200;
+      var duration = 500;
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > offset) {
+          $('.back-to-top').fadeIn(400);
+        } else {
+          $('.back-to-top').fadeOut(400);
+        }
+      });
 
-	// Menu.
-	$('#menu')
-	.append('<a href="#menu" class="close"></a>')
-	.appendTo($body)
-	.panel({
-		delay: 500,
-		hideOnClick: true,
-		hideOnSwipe: true,
-		resetScroll: true,
-		resetForms: true,
-		side: 'right',
-		target: $body,
-		visibleClass: 'is-menu-visible'
-	});
+      $('.back-to-top').on('click',function(event) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: 0
+        }, 600);
+        return false;
+      });
 
-	// Header.
-	if ($banner.length > 0
-		&&	$header.hasClass('alt')) {
+  });      
 
-			$window.on('resize', function() { $window.trigger('scroll'); });
-
-			$banner.scrollex({
-				bottom:		$header.outerHeight() + 1,
-				terminate:	function() { $header.removeClass('alt'); },
-				enter:		function() { $header.addClass('alt'); },
-				leave:		function() { $header.removeClass('alt'); }
-			});
-
-		}
-
-	})(jQuery);
+}(jQuery));
